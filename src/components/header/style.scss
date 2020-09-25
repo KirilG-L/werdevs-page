@@ -1,0 +1,60 @@
+.header {
+  $this: &;
+
+
+  margin: 0;
+  padding: 0;
+
+  &_body {
+    display: flex;
+    padding: 50px 110px;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+
+.navbar {
+
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+  }
+  &_item {
+    height: 33px;
+
+    & > a {
+      color: #3D3D3D;
+      text-decoration: none;
+      text-transform: uppercase;
+      font: 28px Rubik;
+      letter-spacing: 0.56px;
+    }
+
+
+    &:last-child {
+      margin-left: 70px;
+    }
+
+    & > nav > a {
+      vertical-align: middle;
+    }
+  }
+}
+
+.logo {
+  $this: &;
+
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 50px;
+  width: 165px;
+
+  &__img {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,44 @@
+.modal {
+  background-color: #FBFBFB;
+
+  /* Additions */
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  width: 510px;
+
+  &-body {
+    padding: 29px 25px 25px;
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    margin: 0 25px;
+
+    &-block {
+      display: flex;
+      flex-direction: column;
+      margin-top: 8px;
+
+      &:last-child {
+
+        margin-left: 20px;
+      }
+
+      &> span {
+        color: #A2A2A2;
+      }
+    }
+
+    &_item {
+      border: 2px solid #FDD000;
+      color: #3D3D3D;
+      padding: 14px 70px 13px 20px;
+    }
+  }
+}
+
+

@@ -1,0 +1,133 @@
+.content {
+
+  &-list {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    //align-items: stretch;
+    justify-content: flex-end;
+
+    &_item {
+      display: flex;
+      justify-content: flex-end;
+
+      &:last-child {
+      }
+    }
+
+    &_body {
+      display: flex;
+      flex-direction: column;
+      width: 518px;
+
+      margin-top: 192px;
+      margin-right: 32.9px;
+
+    }
+
+    &_title {
+      color: #FDD000;
+      //font-size: 50px;
+      text-transform: uppercase;
+      text-align: right;
+      letter-spacing: 3.5px;
+      font: normal normal normal 50px/64px Rubik;
+      font-weight: bold;
+    }
+
+    &_text {
+      margin-top: 44px;
+      margin-bottom: 404px;
+      text-align: right;
+      font: normal normal 300 30px/40px Rubik;
+      letter-spacing: 0.6px;
+      color: #DFDFDF;
+    }
+  }
+}
+
+.calendar {
+  background-color: #272829;
+  width: 695px;
+  display: flex;
+
+
+  &-wrapper {
+    display: flex;
+    height: inherit;
+    width: inherit;
+    margin: 209px 120px;
+    justify-content: center;
+  }
+
+  .DayPicker {
+
+
+    &-Body {
+      font-size: 17px;
+    }
+
+    &-Caption {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.43);
+      color: #DFDFDF;
+      padding-bottom: 20px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    &-Weekdays {
+      display: table-footer-group;
+      border-top: 1px solid rgba(255, 255, 255, 0.43);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.43);
+    }
+
+    &-Weekday {
+      color:  #FFFFFF;
+      font-size: 20px;
+    }
+
+    &-Month {
+      margin: 0;
+    }
+
+    &-Week {
+
+    }
+
+    &-Day {
+      color: #DFDFDF;
+      padding: 24px 26px;
+      border-radius: 0;
+
+      &--outside{
+        opacity: 24%;
+      }
+
+      &--today{
+        background-color: #FDD000;
+        color: #3D3D3D;
+      }
+    }
+
+    &-NavBar {
+      &> a {
+        display: block;
+        position: relative;
+        width:100%;
+        height:40px;
+        text-align: center;
+        cursor: pointer;
+        z-index: 1500;
+      }
+
+      & > a > img {
+        width: 20px;
+        vertical-align: middle;
+
+      }
+    }
+  }
+
+}
+
+

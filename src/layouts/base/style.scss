@@ -1,0 +1,30 @@
+.layout {
+	$this: &;
+
+	min-height: 100vh !important;
+	line-height: 1.214;
+
+	&__header {
+
+
+		@media (min-width: 768px) {
+
+		}
+	}
+
+	&__content {
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		@media (min-width: 768px) {
+
+		}
+	}
+
+	&__footer {
+
+		@media (min-width: 768px) {
+		}
+	}
+}
