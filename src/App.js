@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react";
+import './App.scss';
+import {Layout} from './layouts/base';
+import { Calendar } from './components/calendar'
+import {Switch, Route, BrowserRouter} from "react-router-dom";
+import {About} from "./components/about";
+import {MyVerticallyCenteredModal} from "./components/modal";
+import {connect} from "react-redux";
+import calendarState from "./reducer/calendar";
 
-function App() {
+function App(props) {
+  const [modalShow, setModalShow] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Layout>
+        {modalShow && <MyVerticallyCenteredModal {...props} show={modalShow}
+                                   onHide={() => setModalShow(false)}
+        />}
+        <Switch>
+          <Route exact path="/" render={() => <Calendar setModalShow={setModalShow}/>} />
+          <Route exact path="/about" component={About} />
+        </Switch>
+      </Layout>
+    </BrowserRouter>
   );
 }
 
-export default App;
+export default connect(state => ({
+  clickedDay: state.calendarState.clickedDay
+}))(App);
