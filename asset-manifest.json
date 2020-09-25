@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/KirilG-L/werdevs-page.git/static/css/main.5324f62a.chunk.css",
+    "main.js": "/KirilG-L/werdevs-page.git/static/js/main.caa8f914.chunk.js",
+    "main.js.map": "/KirilG-L/werdevs-page.git/static/js/main.caa8f914.chunk.js.map",
+    "runtime-main.js": "/KirilG-L/werdevs-page.git/static/js/runtime-main.aa660a11.js",
+    "runtime-main.js.map": "/KirilG-L/werdevs-page.git/static/js/runtime-main.aa660a11.js.map",
+    "static/css/2.c6231af7.chunk.css": "/KirilG-L/werdevs-page.git/static/css/2.c6231af7.chunk.css",
+    "static/js/2.f2d00118.chunk.js": "/KirilG-L/werdevs-page.git/static/js/2.f2d00118.chunk.js",
+    "static/js/2.f2d00118.chunk.js.map": "/KirilG-L/werdevs-page.git/static/js/2.f2d00118.chunk.js.map",
+    "index.html": "/KirilG-L/werdevs-page.git/index.html",
+    "precache-manifest.10d539ef6b43df3ed536d3cf3fe2a553.js": "/KirilG-L/werdevs-page.git/precache-manifest.10d539ef6b43df3ed536d3cf3fe2a553.js",
+    "service-worker.js": "/KirilG-L/werdevs-page.git/service-worker.js",
+    "static/css/2.c6231af7.chunk.css.map": "/KirilG-L/werdevs-page.git/static/css/2.c6231af7.chunk.css.map",
+    "static/css/main.5324f62a.chunk.css.map": "/KirilG-L/werdevs-page.git/static/css/main.5324f62a.chunk.css.map",
+    "static/js/2.f2d00118.chunk.js.LICENSE.txt": "/KirilG-L/werdevs-page.git/static/js/2.f2d00118.chunk.js.LICENSE.txt",
+    "static/media/Artboard.jpg": "/KirilG-L/werdevs-page.git/static/media/Artboard.37a75b54.jpg",
+    "static/media/Logo.svg": "/KirilG-L/werdevs-page.git/static/media/Logo.b1a38376.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aa660a11.js",
+    "static/css/2.c6231af7.chunk.css",
+    "static/js/2.f2d00118.chunk.js",
+    "static/css/main.5324f62a.chunk.css",
+    "static/js/main.caa8f914.chunk.js"
+  ]
+}
